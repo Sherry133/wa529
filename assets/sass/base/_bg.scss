@@ -2,7 +2,7 @@
 
 #bg {
 	@include vendor('transition', 'opacity #{_duration(bg-fadein)} ease-in-out');
-	background: #1cb495 url("/images/family_filter.jpg");
+	background: #1cb495 url("/images/forest_path.jpg");
 	height: 100%;
 	min-height: 100vh;
 	left: 0;
@@ -14,7 +14,7 @@
 
 	@include breakpoint('<=xsmall') {
 
-		background: url("/images/family_filter.jpg");
+		background: url("/images/forest_path.jpg");
 		background-repeat: no-repeat;
 		background-position: center left;
 		background-size: cover;
