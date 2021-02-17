@@ -47,11 +47,12 @@ body {
 	@include vendor('display', 'flex');
 	@include vendor('flex-direction', 'column');
 	@include vendor('justify-content', 'center');
-	// background-color: _palette(bg);
+	background-color: #000;
 	padding: 6em 4em 4em 4em;
+
 }
 
-// background: #1cb495 url("/images/family_filter.jpg");
+// background: #1cb495 url("/images/bg01.jpg");
 
 // Stops initial animations until page loads.
 // &.is-preload {
