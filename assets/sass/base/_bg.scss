@@ -2,7 +2,7 @@
 
 #bg {
 	@include vendor('transition', 'opacity #{_duration(bg-fadein)} ease-in-out');
-	background: #1cb495 url("/images/family_filter.jpg");
+	background: url("/images/family_filter.jpg");
 
 	height: 100%;
 	min-height: 100vh;
@@ -11,7 +11,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10;
+	z-index: -10;
 
 
 	@include breakpoint('<=xsmall') {
