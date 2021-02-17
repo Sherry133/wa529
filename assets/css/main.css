@@ -299,7 +299,7 @@ body {
 }
 
 body.is-preload #bg {
-  opacity: .5;
+  opacity: 5;
 }
 
 @-webkit-keyframes bg {
