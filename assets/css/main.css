@@ -242,8 +242,6 @@ body {
 
 /* BG */
 #bg {
-  -webkit-transition: opacity 0.035s ease-in-out;
-  transition: opacity 0.035s ease-in-out;
   background: url("/images/family_filter.jpg");
   height: 100%;
   min-height: 100vh;
@@ -265,8 +263,6 @@ body {
 }
 
 #bg div {
-  -webkit-transition: opacity 0.035s ease-in-out;
-  transition: opacity 0.035s ease-in-out;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -275,15 +271,13 @@ body {
   top: 0;
   visibility: visible;
   width: 150%;
-  z-index: 1;
+  z-index: -1;
 }
 
 #bg div.visible {
-  -webkit-animation: bg 0.035s linear infinite;
-  animation: bg 0.035s linear infinite;
   opacity: .5;
   visibility: visible;
-  z-index: 10;
+  z-index: -1;
 }
 
 #bg div.visible.top {
@@ -293,49 +287,8 @@ body {
   opacity: .325;
 }
 
-@media screen and (max-width: 1280px) {
-  #bg div.visible {
-    -webkit-animation: bg 44.85s linear infinite;
-    animation: bg 44.85s linear infinite;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #bg div.visible {
-    -webkit-animation: bg 27.6s linear infinite;
-    animation: bg 27.6s linear infinite;
-  }
-}
-
-#bg div:only-child {
-  -webkit-animation-direction: alternate !important;
-  animation-direction: alternate !important;
-}
-
-#bg body.is-preload {
+#bg div body.is-preload {
   opacity: 0;
-}
-
-@-webkit-keyframes bg {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-25%);
-    transform: translateX(-25%);
-  }
-}
-
-@keyframes bg {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-25%);
-    transform: translateX(-25%);
-  }
 }
 
 /* Type */
