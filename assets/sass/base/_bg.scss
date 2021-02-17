@@ -30,7 +30,7 @@
 		opacity: .9;
 		position: absolute;
 		top: 0;
-		visibility: hidden;
+		visibility: visible;
 		width: 150%;
 		z-index: 10;
 
@@ -38,12 +38,12 @@
 			@include vendor('animation', 'bg #{_duration(bg-fadein)} linear infinite');
 			opacity: .5;
 			visibility: visible;
-			// z-index: 0;
+			z-index: 10;
 
 
 			&.top {
 				position: relative;
-				z-index: -2;
+				z-index: 10;
 				// background: #000;
 				// opacity: .325;
 			}
