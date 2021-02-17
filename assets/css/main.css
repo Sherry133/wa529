@@ -214,36 +214,30 @@ body {
   padding: 6em 4em 4em 4em;
 }
 
-body.is-preload *,
-body.is-preload *:before,
-body.is-preload *:after {
+*,
+*:before,
+*:after {
   -webkit-animation: none !important;
   animation: none !important;
   -webkit-transition: none !important;
   transition: none !important;
 }
 
-body > * {
+> * {
   position: relative;
   z-index: 2;
 }
 
 @media screen and (max-width: 1680px) {
-  body {
-    padding: 6em 3.5em 3.5em 3.5em;
-  }
+  padding: 6em 3.5em 3.5em 3.5em;
 }
 
 @media screen and (max-width: 736px) {
-  body {
-    padding: 5em 2em 2em 2em;
-  }
+  padding: 5em 2em 2em 2em;
 }
 
 @media screen and (max-width: 360px) {
-  body {
-    padding: 5em 1.25em 1.25em 1.25em;
-  }
+  padding: 5em 1.25em 1.25em 1.25em;
 }
 
 /* BG */
@@ -294,6 +288,8 @@ body > * {
 #bg div.visible.top {
   position: relative;
   z-index: -2;
+  background: #000;
+  opacity: .325;
 }
 
 @media screen and (max-width: 1280px) {
