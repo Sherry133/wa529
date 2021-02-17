@@ -211,7 +211,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("/bg01.jpg");
   padding: 6em 4em 4em 4em;
 }
 
