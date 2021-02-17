@@ -47,7 +47,7 @@ body {
 	@include vendor('display', 'flex');
 	@include vendor('flex-direction', 'column');
 	@include vendor('justify-content', 'center');
-	background: url("./images/bg01.jpg");
+	background: url("/bg01.jpg");
 	padding: 6em 4em 4em 4em;
 
 }
