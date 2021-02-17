@@ -2,19 +2,21 @@
 
 #bg {
 	@include vendor('transition', 'opacity #{_duration(bg-fadein)} ease-in-out');
-	background: #1cb495 url("/images/forest_path.jpg");
+	background: #1cb495 url("/images/family_filter.jpg");
+	// background: #1cb495 url("/images/family_filter.jpg");
 	height: 100%;
 	min-height: 100vh;
 	left: 0;
+	opacity: .99;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: -10;
-	opacity: 1;
+
 
 	@include breakpoint('<=xsmall') {
 
-		background: url("/images/forest_path.jpg");
+		background: url("/images/family_filter.jpg");
 		background-repeat: no-repeat;
 		background-position: center left;
 		background-size: cover;
@@ -25,7 +27,7 @@
 		background-size: cover;
 		height: 100%;
 		left: 0;
-		opacity: .25;
+		opacity: .9;
 		position: absolute;
 		top: 0;
 		visibility: hidden;
@@ -36,40 +38,43 @@
 			@include vendor('animation', 'bg #{_duration(bg-fadein)} linear infinite');
 			opacity: .5;
 			visibility: visible;
+			// z-index: 0;
 
 
 			&.top {
+				position: relative;
 				z-index: -2;
-				background: #000;
-
-				@include breakpoint('<=large') {
-					@include vendor('animation', 'bg #{_duration(bg-fadein) * 0.65} linear infinite');
-				}
-
-				@include breakpoint('<=small') {
-					@include vendor('animation', 'bg #{_duration(bg-fadein) * 0.4} linear infinite');
-				}
-
-
+				// background: #000;
+				// opacity: .325;
 			}
 
-			&:only-child {
-				@include vendor('animation-direction', 'alternate !important');
+			@include breakpoint('<=large') {
+				@include vendor('animation', 'bg #{_duration(bg-slide) * 0.65} linear infinite');
 			}
+
+			@include breakpoint('<=small') {
+				@include vendor('animation', 'bg #{_duration(bg-slide) * 0.4} linear infinite');
+			}
+
+		}
+
+		&:only-child {
+			@include vendor('animation-direction', 'alternate !important');
 		}
 	}
+
 
 	body.is-preload {
 		opacity: 0;
 	}
+}
 
-	@include keyframes(bg) {
-		0% {
-			@include vendor('transform', 'translateX(0)');
-		}
+@include keyframes(bg) {
+	0% {
+		@include vendor('transform', 'translateX(0)');
+	}
 
-		100% {
-			@include vendor('transform', 'translateX(-25%)');
-		}
+	100% {
+		@include vendor('transform', 'translateX(-25%)');
 	}
 }

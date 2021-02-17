@@ -2,11 +2,11 @@
 $misc: ();
 
 // Duration.
-$duration: (nav: 5s,
-	transition: 3s,
-	bg-fadein: 3s,
-	bg-transition: 10s,
-	bg-slide: 99s // (lower = faster, higher = slower)
+$duration: (nav: .035s,
+	transition: .035s,
+	bg-fadein: .035s,
+	bg-transition: 1s,
+	bg-slide: 69s // (lower = faster, higher = slower)
 );
 // $duration: (nav: 0.3s,
 // 	transition: 0.3s,

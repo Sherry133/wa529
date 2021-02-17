@@ -248,22 +248,22 @@ body > * {
 
 /* BG */
 #bg {
-  -webkit-transition: opacity 3s ease-in-out;
-  transition: opacity 3s ease-in-out;
-  background: #1cb495 url("/images/forest_path.jpg");
+  -webkit-transition: opacity 0.035s ease-in-out;
+  transition: opacity 0.035s ease-in-out;
+  background: #1cb495 url("/images/family_filter.jpg");
   height: 100%;
   min-height: 100vh;
   left: 0;
+  opacity: .99;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: -10;
-  opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
   #bg {
-    background: url("/images/forest_path.jpg");
+    background: url("/images/family_filter.jpg");
     background-repeat: no-repeat;
     background-position: center left;
     background-size: cover;
@@ -271,12 +271,12 @@ body > * {
 }
 
 #bg div {
-  -webkit-transition: opacity 3s ease-in-out;
-  transition: opacity 3s ease-in-out;
+  -webkit-transition: opacity 0.035s ease-in-out;
+  transition: opacity 0.035s ease-in-out;
   background-size: cover;
   height: 100%;
   left: 0;
-  opacity: .25;
+  opacity: .9;
   position: absolute;
   top: 0;
   visibility: hidden;
@@ -285,32 +285,32 @@ body > * {
 }
 
 #bg div.visible {
-  -webkit-animation: bg 3s linear infinite;
-  animation: bg 3s linear infinite;
+  -webkit-animation: bg 0.035s linear infinite;
+  animation: bg 0.035s linear infinite;
   opacity: .5;
   visibility: visible;
 }
 
 #bg div.visible.top {
+  position: relative;
   z-index: -2;
-  background: #000;
 }
 
 @media screen and (max-width: 1280px) {
-  #bg div.visible.top {
-    -webkit-animation: bg 1.95s linear infinite;
-    animation: bg 1.95s linear infinite;
+  #bg div.visible {
+    -webkit-animation: bg 44.85s linear infinite;
+    animation: bg 44.85s linear infinite;
   }
 }
 
 @media screen and (max-width: 736px) {
-  #bg div.visible.top {
-    -webkit-animation: bg 1.2s linear infinite;
-    animation: bg 1.2s linear infinite;
+  #bg div.visible {
+    -webkit-animation: bg 27.6s linear infinite;
+    animation: bg 27.6s linear infinite;
   }
 }
 
-#bg div.visible:only-child {
+#bg div:only-child {
   -webkit-animation-direction: alternate !important;
   animation-direction: alternate !important;
 }
@@ -399,8 +399,8 @@ textarea {
 }
 
 a {
-  -webkit-transition: border-bottom-color 3s ease, color 3s ease;
-  transition: border-bottom-color 3s ease, color 3s ease;
+  -webkit-transition: border-bottom-color 0.035s ease, color 0.035s ease;
+  transition: border-bottom-color 0.035s ease, color 0.035s ease;
   border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
   color: #1cb495;
   text-decoration: none;
@@ -673,10 +673,10 @@ form {
 
 form .message {
   text-decoration: none;
-  -webkit-transition: opacity 3s ease-in-out, -webkit-transform 3s ease-in-out;
-  transition: opacity 3s ease-in-out, -webkit-transform 3s ease-in-out;
-  transition: opacity 3s ease-in-out, transform 3s ease-in-out;
-  transition: opacity 3s ease-in-out, transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
+  -webkit-transition: opacity 0.035s ease-in-out, -webkit-transform 0.035s ease-in-out;
+  transition: opacity 0.035s ease-in-out, -webkit-transform 0.035s ease-in-out;
+  transition: opacity 0.035s ease-in-out, transform 0.035s ease-in-out;
+  transition: opacity 0.035s ease-in-out, transform 0.035s ease-in-out, -webkit-transform 0.035s ease-in-out;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   height: 2.75em;
@@ -773,8 +773,8 @@ textarea {
   appearance: none;
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: border-color 3s ease, background-color 3s ease;
-  transition: border-color 3s ease, background-color 3s ease;
+  -webkit-transition: border-color 0.035s ease, background-color 0.035s ease;
+  transition: border-color 0.035s ease, background-color 0.035s ease;
   background-color: transparent;
   border-radius: 6px;
   border: none;
@@ -957,8 +957,8 @@ button,
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -webkit-transition: background-color 3s ease-in-out, color 3s ease-in-out, opacity 3s ease-in-out;
-  transition: background-color 3s ease-in-out, color 3s ease-in-out, opacity 3s ease-in-out;
+  -webkit-transition: background-color 0.035s ease-in-out, color 0.035s ease-in-out, opacity 0.035s ease-in-out;
+  transition: background-color 0.035s ease-in-out, color 0.035s ease-in-out, opacity 0.035s ease-in-out;
   background-color: #1cb495;
   border-radius: 6px;
   border: 0;
