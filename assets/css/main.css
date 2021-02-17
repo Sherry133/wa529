@@ -252,7 +252,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: -10;
+  z-index: 10;
 }
 
 @media screen and (max-width: 480px) {
@@ -283,6 +283,7 @@ body {
   animation: bg 0.035s linear infinite;
   opacity: .5;
   visibility: visible;
+  z-index: 10;
 }
 
 #bg div.visible.top {
@@ -644,7 +645,6 @@ ul.icons {
 }
 
 ul.icons li {
-  display: inline-block;
   padding: 0 1em 0 0;
 }
 
@@ -654,7 +654,7 @@ ul.icons li:last-child {
 
 ul.icons li .icon:before {
   font-size: 1.25em;
-  color: red;
+  color: #fff;
 }
 
 ul.icons li a {

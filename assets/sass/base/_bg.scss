@@ -30,9 +30,9 @@
 		opacity: .9;
 		position: absolute;
 		top: 0;
-		visibility: visible;
+		visibility: hidden;
 		width: 150%;
-		z-index: 10;
+		z-index: -10;
 
 		&.visible {
 			@include vendor('animation', 'bg #{_duration(bg-fadein)} linear infinite');
@@ -43,15 +43,10 @@
 
 			&.top {
 				position: relative;
-<<<<<<< HEAD
 				z-index: -2;
 				background: #000;
 				opacity: .325;
-=======
-				z-index: 10;
-				// background: #000;
-				// opacity: .325;
->>>>>>> ec76415855ab76a878aca9c9cd33128cb455843a
+
 			}
 
 			@include breakpoint('<=large') {
@@ -84,5 +79,3 @@
 		@include vendor('transform', 'translateX(-25%)');
 	}
 }
-
-
