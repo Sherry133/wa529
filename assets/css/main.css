@@ -1073,6 +1073,7 @@ button:disabled,
 #signup-form > :first-child {
   margin: 0 0 0 0;
   color: #fff;
+  border: 2px solid #fff;
 }
 
 @media screen and (max-width: 736px) {
