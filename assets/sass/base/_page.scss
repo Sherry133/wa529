@@ -32,14 +32,17 @@ html {
 }
 
 html,
-body {
+body,
+	{
 	height: 100%;
 	overflow-x: hidden;
+	// overflow-y: hidden;
 	width: 100%;
 
 	@include breakpoint('short') {
 		height: auto;
 		min-height: 100%;
+
 	}
 }
 
@@ -67,7 +70,7 @@ body {
 
 >* {
 	position: relative;
-	z-index: -12;
+	z-index: 2;
 }
 
 @include breakpoint('<=xlarge') {
@@ -80,4 +83,14 @@ body {
 
 @include breakpoint('<=xxsmall') {
 	padding: 5em 1.25em 1.25em 1.25em;
+}
+
+.background-image {
+	width: 100vw;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+
 }
